@@ -5,7 +5,7 @@ const CarritosEsquema = mongoose.Schema(
         carrito: Array
     },
     {
-        timestamps: true, // createAt | updatedAt 
+        timestamps: true, 
         versionKey: false
     }
 )

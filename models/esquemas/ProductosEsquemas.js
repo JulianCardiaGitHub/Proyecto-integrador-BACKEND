@@ -16,7 +16,7 @@ const ProductosEsquema = mongoose.Schema(
         envio: Boolean
     },
     {
-        timestamps: true, // createAt | updatedAt 
+        timestamps: true, 
         versionKey: false
     }
     

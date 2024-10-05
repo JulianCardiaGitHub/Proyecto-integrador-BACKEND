@@ -2,7 +2,7 @@ import express from 'express'
 import cors from 'cors'
 
 
-// https://www.npmjs.com/package/dotenv
+
 import 'dotenv/config'
 import routerProductos from './routers/productos.router.js'
 import getConnection from './utils/get-connection.js'
@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 2222
 const uri_remota = process.env.URI_MONGO
 
 // ! Middleares
-app.use(express.json()) // Intrepeta el body y lo entiende
+app.use(express.json())
 app.use(cors()) // Todos los origines están permisos
 
 // ! Rutas

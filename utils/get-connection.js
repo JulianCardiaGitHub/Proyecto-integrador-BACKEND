@@ -1,14 +1,12 @@
-import mongoose from 'mongoose'
+import mongoose from "mongoose";
 
 const getConnection = async (uri_remota) => {
-  
   try {
-    await mongoose.connect(uri_remota)
-    console.log('Conexión OK')
+    await mongoose.connect(uri_remota);
+    console.log("Conexión OK");
   } catch (error) {
-    console.log('Conexión Error', error)    
+    console.log("Conexión Error", error);
   }
+};
 
-}
-
-export default getConnection
+export default getConnection;
