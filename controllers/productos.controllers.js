@@ -54,7 +54,7 @@ const remove = async (req, res) => {
   try {
     const productoBorrado = await modelos.deleteProducto(id);
     console.log(productoBorrado);
-    res.json(handleMongoId(productoBorrado));
+    res.json(handleMongoId({producto: productoBorrado}));
   } catch (error) {
     console.log("[error]", error);
   }
