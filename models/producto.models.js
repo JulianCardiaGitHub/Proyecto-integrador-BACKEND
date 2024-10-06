@@ -52,7 +52,7 @@ const updateProducto = async (id, productoPorEditado) => {
 const deleteProducto = async (id) => {
   try {
     const productoBorrado = await ProductosModelo.findByIdAndDelete(id);
-    //console.log(productoBorrado)
+    console.log(productoBorrado)
     return productoBorrado;
   } catch (error) {
     console.log("[deleteProducto]", error);

@@ -50,11 +50,12 @@ const update = async (req, res) => {
 
 const remove = async (req, res) => {
   const id = req.params.id;
-
+  
   try {
     const productoBorrado = await modelos.deleteProducto(id);
     console.log(productoBorrado);
-    res.json(handleMongoId({producto: productoBorrado}));
+    res.json(handleMongoId(productoBorrado))
+    
   } catch (error) {
     console.log("[error]", error);
   }
